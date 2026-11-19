@@ -1,0 +1,16 @@
+# Variables d'environnement (JAMAIS sur GitHub)
+.env
+.env.local
+
+# Sauvegardes automatiques de l'agent
+*.agent.bak
+
+# Node / Python
+node_modules/
+__pycache__/
+*.pyc
+dist/
+build/
+
+# Logs
+*.log
