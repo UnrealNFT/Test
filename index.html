@@ -3,36 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visite de Paris</title>
+    <title>Visite de Paris — La Ville Lumière</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="bg-orbs">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">🇫🇷 <span>Paris<span class="logo-dot">.</span>Guide</span></div>
         <nav>
             <ul>
                 <li><a href="#monuments">Monuments</a></li>
-                <li><a href="#footer">Contact</a></li>
+                <li><a href="#decouverte">Découverte</a></li>
+                <li><a href="#footer" class="nav-cta">Contact</a></li>
             </ul>
         </nav>
-        <h1>Bienvenue à Paris</h1>
     </header>
-    <main>
-        <section id="monuments">
-            <h2>Monuments célèbres</h2>
-            <ul>
-                <li>Tour Eiffel</li>
-                <li>Louvre</li>
-                <li>Notre-Dame</li>
-            </ul>
-        </section>
-        <div class="random-monument">
-            <p id="display-monument">Cliquez pour découvrir un monument !</p>
-            <button id="btn-random">Monument au hasard</button>
+
+    <section class="hero">
+        <p class="hero-kicker">✦ La Ville Lumière vous attend</p>
+        <h1>Bienvenue à <em>Paris</em></h1>
+        <p class="hero-sub">Découvrez les monuments les plus emblématiques du monde,
+            une expérience inoubliable au cœur de la capitale.</p>
+        <div class="hero-actions">
+            <a href="#monuments" class="btn btn-primary">Explorer les monuments</a>
+            <a href="#decouverte" class="btn btn-ghost">Tenter ma chance 🎲</a>
         </div>
+        <div class="hero-stats">
+            <div class="stat"><strong>320+</strong><span>monuments</span></div>
+            <div class="stat"><strong>130</strong><span>musées</span></div>
+            <div class="stat"><strong>∞</strong><span>de charme</span></div>
+        </div>
+    </section>
+
+    <main>
+        <section id="monuments" class="section reveal">
+            <p class="section-kicker">— Incontournables</p>
+            <h2>Monuments <em>célèbres</em></h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-emoji">🗼</div>
+                    <h3>Tour Eiffel</h3>
+                    <p>La Dame de Fer culmine à 330 m. Symbole absolu de Paris, elle scintille chaque soir à la tombée de la nuit.</p>
+                    <span class="card-tag">Champ de Mars</span>
+                </article>
+                <article class="card">
+                    <div class="card-emoji">🖼️</div>
+                    <h3>Louvre</h3>
+                    <p>Le plus grand musée du monde abrite la Joconde derrière sa pyramide de verre iconique.</p>
+                    <span class="card-tag">Rive Droite</span>
+                </article>
+                <article class="card">
+                    <div class="card-emoji">⛪</div>
+                    <h3>Notre-Dame</h3>
+                    <p>Chef-d'œuvre de l'art gothique, la cathédrale veille sur l'île de la Cité depuis 800 ans.</p>
+                    <span class="card-tag">Île de la Cité</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="decouverte" class="section reveal">
+            <div class="random-panel">
+                <p class="section-kicker">— Laissez Paris choisir</p>
+                <h2>Monument <em>au hasard</em></h2>
+                <div class="random-display">
+                    <span id="display-monument">Cliquez pour découvrir un monument !</span>
+                </div>
+                <button id="btn-random" class="btn btn-primary btn-big">🎲 Découvrir un monument</button>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2023 - Visite de Paris</p>
+
+    <footer id="footer">
+        <p>Fait avec ❤️ à Paris — <em>Visite de Paris</em> &copy; 2025</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

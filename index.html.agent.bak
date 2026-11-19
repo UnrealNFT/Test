@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visite de Paris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#monuments">Monuments</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Bienvenue à Paris</h1>
+    </header>
+    <main>
+        <section id="monuments">
+            <h2>Monuments célèbres</h2>
+            <ul>
+                <li>Tour Eiffel</li>
+                <li>Louvre</li>
+                <li>Notre-Dame</li>
+            </ul>
+        </section>
+        <div class="random-monument">
+            <p id="display-monument">Cliquez pour découvrir un monument !</p>
+            <button id="btn-random">Monument au hasard</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 - Visite de Paris</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
